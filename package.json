@@ -1,11 +1,18 @@
 {
   "name": "tracealyzer",
-  "version": "0.9.3",
+  "version": "0.9.4",
+  "keywords": [
+    "chrome",
+    "devtool",
+    "timeline",
+    "fps",
+    "performance"
+  ],
   "description": "A small package that reads Chrome trace files and outputs relevant information and statistics",
   "main": "index.js",
-  "url": "http://github.com/madskonradsen/tracealyzer",
+  "url": "http://github.com/djusv/tracealyzer",
   "scripts": {
-    "test": "$(npm bin)/mocha"
+    "test": "mocha"
   },
   "author": "Mads K",
   "license": "MIT",
