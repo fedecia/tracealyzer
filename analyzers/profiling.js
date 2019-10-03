@@ -18,6 +18,7 @@ function analyzeUserFunctions(model) {
 }
 
 const analyzeProfiling = model => ({
+  cpuBySubdomain: dumpTree(model.bottomUpGroupBy('Subdomain'), 'totalTime'),
   categories: dumpTree(model.bottomUpGroupBy('Category'), 'totalTime'),
   events: dumpTree(model.bottomUpGroupBy('EventName'), 'totalTime'),
   functions: dumpTree(model.bottomUp(), 'selfTime'),
